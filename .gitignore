@@ -1,2 +1,8 @@
 generate-images*.py
 generate-images*.sh
+.claude
+.DS_Store
+node_modules/
+.env
+*.log
+.vscode/
