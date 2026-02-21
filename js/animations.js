@@ -419,7 +419,7 @@
         const rect = container.getBoundingClientRect();
         let pos = ((x - rect.left) / rect.width) * 100;
         pos = Math.max(2, Math.min(98, pos));
-        beforeImg.style.clipPath = `inset(0 ${100 - pos}% 0 0)`;
+        beforeImg.style.clipPath = `inset(0 0 0 ${pos}%)`;
         handle.style.left = pos + '%';
       }
 
