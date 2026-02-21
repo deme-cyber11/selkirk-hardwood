@@ -116,17 +116,6 @@
         ]
     }
     </script>
-
-    <style>
-    .faq-page .faq-item { border-bottom: 1px solid #e5e5e5; padding: 1.5rem 0; }
-    .faq-page .faq-item:last-child { border-bottom: none; }
-    .faq-page .faq-question { width: 100%; background: none; border: none; font-family: 'DM Sans', 'Inter', sans-serif; font-size: 1.05rem; font-weight: 700; color: var(--text); cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 1rem; text-align: left; padding: 0.5rem 0; min-height: 44px; }
-    .faq-page .faq-question::after { content: '+'; font-size: 1.5rem; font-weight: 300; color: var(--accent); flex-shrink: 0; transition: transform 0.3s; }
-    .faq-page .faq-item.open .faq-question::after { content: '−'; }
-    .faq-page .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.4s ease, padding 0.3s; }
-    .faq-page .faq-item.open .faq-answer { max-height: 500px; padding-top: 1rem; }
-    .faq-page .faq-answer p { color: #555; line-height: 1.7; }
-    </style>
 </head>
 <body>
 
@@ -141,7 +130,7 @@
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="tel:+15095550147" class="header-phone"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg> (509) 555-0147</a></li>
-                <li><a href="contact.html" class="btn btn-primary" style="padding: 10px 20px; font-size: 0.85rem;">Free Estimate</a></li>
+                <li><a href="contact.html" class="btn btn-primary btn-magnetic" style="padding: 10px 20px; font-size: 0.85rem;">Free Estimate</a></li>
             </ul>
         </div>
     </header>
@@ -161,67 +150,67 @@
             <div class="content-section faq-page" style="max-width: 800px; margin: 0 auto;">
 
                 <div class="faq-item open">
-                    <button class="faq-question" onclick="this.parentElement.classList.toggle('open')" aria-expanded="true">How much does hardwood floor refinishing cost in Spokane?</button>
+                    <button class="faq-question" aria-expanded="true">How much does hardwood floor refinishing cost in Spokane?</button>
                     <div class="faq-answer"><p>Hardwood floor refinishing in Spokane typically costs <strong>$3–$8 per square foot</strong>, depending on floor condition, stain choice, and finish type. A typical 1,000 sq ft project runs $3,000–$5,500. Dustless sanding adds $0.50–$1.00/sq ft. See our <a href="cost-guide.html">detailed pricing guide</a> for full breakdowns.</p></div>
                 </div>
 
                 <div class="faq-item">
-                    <button class="faq-question" onclick="this.parentElement.classList.toggle('open')" aria-expanded="false">How long does hardwood floor refinishing take?</button>
+                    <button class="faq-question" aria-expanded="false">How long does hardwood floor refinishing take?</button>
                     <div class="faq-answer"><p>Most residential refinishing projects take <strong>3–5 days</strong> from start to furniture move-back. Single rooms can be completed in 1–2 days. Spokane's dry climate actually helps finishes cure faster than in humid coastal areas, often allowing foot traffic 24 hours sooner.</p></div>
                 </div>
 
                 <div class="faq-item">
-                    <button class="faq-question" onclick="this.parentElement.classList.toggle('open')" aria-expanded="false">What is dustless hardwood floor sanding?</button>
+                    <button class="faq-question" aria-expanded="false">What is dustless hardwood floor sanding?</button>
                     <div class="faq-answer"><p>Dustless sanding uses commercial-grade HEPA-filtered vacuum systems connected directly to sanding equipment, capturing 99% of dust before it becomes airborne. This is especially valuable in Spokane homes where forced-air heating runs 6+ months per year — traditional sanding dust infiltrates HVAC ducts and recirculates for months.</p></div>
                 </div>
 
                 <div class="faq-item">
-                    <button class="faq-question" onclick="this.parentElement.classList.toggle('open')" aria-expanded="false">What stain colors are available for hardwood floors?</button>
+                    <button class="faq-question" aria-expanded="false">What stain colors are available for hardwood floors?</button>
                     <div class="faq-answer"><p>We offer <strong>40+ stain colors</strong> ranging from natural clear coats to deep espresso and weathered gray. Popular choices in Spokane include warm walnut (complements Craftsman woodwork), weathered gray (modern farmhouse), classic natural (showcases original wood grain), and whitewashed oak (Scandinavian-inspired). We apply test patches on your actual floor before committing.</p></div>
                 </div>
 
                 <div class="faq-item">
-                    <button class="faq-question" onclick="this.parentElement.classList.toggle('open')" aria-expanded="false">Can you fix pet scratches and damage on hardwood floors?</button>
+                    <button class="faq-question" aria-expanded="false">Can you fix pet scratches and damage on hardwood floors?</button>
                     <div class="faq-answer"><p>Yes. Surface scratches that only penetrate the finish layer are removed during the sanding process. Deep scratches, gouges, and pet urine stains that have penetrated into the wood may require board replacement or specialized treatment. We assess the damage during our <a href="contact.html">free estimate</a> and recommend the most cost-effective repair approach.</p></div>
                 </div>
 
                 <div class="faq-item">
-                    <button class="faq-question" onclick="this.parentElement.classList.toggle('open')" aria-expanded="false">How does Spokane's climate affect hardwood floors?</button>
+                    <button class="faq-question" aria-expanded="false">How does Spokane's climate affect hardwood floors?</button>
                     <div class="faq-answer"><p>Spokane's semi-arid continental climate creates significant seasonal challenges. Winter indoor humidity drops to 15–25% when furnaces run constantly, causing wood contraction and gap formation. Summer brings heat and UV exposure. We use flexible gap fillers, UV-resistant finishes, and finish systems calibrated for the Inland Northwest's extreme seasonal swings. We recommend maintaining <strong>35–55% indoor humidity</strong> year-round.</p></div>
                 </div>
 
                 <div class="faq-item">
-                    <button class="faq-question" onclick="this.parentElement.classList.toggle('open')" aria-expanded="false">Can water-damaged hardwood floors be repaired?</button>
+                    <button class="faq-question" aria-expanded="false">Can water-damaged hardwood floors be repaired?</button>
                     <div class="faq-answer"><p>Often yes. Minor water damage causing surface staining or light cupping can usually be sanded out and refinished. Severe water damage with buckling, warping, or mold growth may require board replacement. We assess damage extent during our free estimate. Early intervention is key — if you notice water damage, <a href="contact.html">contact us promptly</a> for the best outcome.</p></div>
                 </div>
 
                 <div class="faq-item">
-                    <button class="faq-question" onclick="this.parentElement.classList.toggle('open')" aria-expanded="false">How do I maintain my refinished hardwood floors?</button>
+                    <button class="faq-question" aria-expanded="false">How do I maintain my refinished hardwood floors?</button>
                     <div class="faq-answer"><p>Sweep or vacuum weekly with a hardwood-safe attachment. Damp mop monthly with a pH-neutral hardwood cleaner (we recommend Bona Hardwood Floor Cleaner). Use felt pads under furniture, remove shoes at the door, and maintain 35–55% indoor humidity. In Spokane, a <strong>whole-house humidifier during winter</strong> is the single best investment for floor longevity. Avoid steam mops, vinegar, and wet Swiffers.</p></div>
                 </div>
 
                 <div class="faq-item">
-                    <button class="faq-question" onclick="this.parentElement.classList.toggle('open')" aria-expanded="false">Can you refinish hardwood floors in older Spokane homes?</button>
+                    <button class="faq-question" aria-expanded="false">Can you refinish hardwood floors in older Spokane homes?</button>
                     <div class="faq-answer"><p>Absolutely — we specialize in it. Many South Hill Craftsman homes and Browne's Addition historic properties have original fir and oak floors from the 1900s–1940s. We check board thickness to ensure there's enough wood for sanding, test for lead paint (EPA Lead-Safe certified for pre-1978 homes), and use techniques that preserve the character of antique floors while modernizing the finish.</p></div>
                 </div>
 
                 <div class="faq-item">
-                    <button class="faq-question" onclick="this.parentElement.classList.toggle('open')" aria-expanded="false">Should I refinish or replace my hardwood floors?</button>
+                    <button class="faq-question" aria-expanded="false">Should I refinish or replace my hardwood floors?</button>
                     <div class="faq-answer"><p>Refinishing is almost always the better value. It costs <strong>$3–$8/sq ft versus $10–$20/sq ft</strong> for new installation. Refinish if: floors have enough thickness, damage is cosmetic, or you want a color change. Replace if: boards are too thin for sanding, structural damage exists, or you want a completely different wood species. We'll give you an honest assessment during our <a href="contact.html">free estimate</a>.</p></div>
                 </div>
 
                 <div class="faq-item">
-                    <button class="faq-question" onclick="this.parentElement.classList.toggle('open')" aria-expanded="false">Do I need to move out during refinishing?</button>
+                    <button class="faq-question" aria-expanded="false">Do I need to move out during refinishing?</button>
                     <div class="faq-answer"><p>Not necessarily. With our dustless sanding system, many families stay in their homes during the project. We work room by room when possible. You'll need to avoid walking on freshly finished floors for 24 hours and wait 72 hours before replacing furniture. If the entire house is being done at once, staying with friends or family for 3–4 days makes the process faster for everyone.</p></div>
                 </div>
 
                 <div class="faq-item">
-                    <button class="faq-question" onclick="this.parentElement.classList.toggle('open')" aria-expanded="false">What type of finish do you use?</button>
+                    <button class="faq-question" aria-expanded="false">What type of finish do you use?</button>
                     <div class="faq-answer"><p>We primarily use <strong>Bona Mega ONE</strong> waterborne polyurethane — a commercial-grade, low-VOC finish that cures hard, resists scratches, and doesn't yellow over time. For high-traffic areas or commercial spaces, we offer Bona Traffic HD, the most durable waterborne finish available. Oil-based polyurethane is available for homeowners who prefer the classic amber warmth it provides.</p></div>
                 </div>
 
                 <div class="faq-item">
-                    <button class="faq-question" onclick="this.parentElement.classList.toggle('open')" aria-expanded="false">How often should hardwood floors be refinished?</button>
+                    <button class="faq-question" aria-expanded="false">How often should hardwood floors be refinished?</button>
                     <div class="faq-answer"><p>With proper maintenance, most hardwood floors need refinishing every <strong>7–10 years</strong>. High-traffic homes with kids and pets may need it every 5–7 years. Low-traffic rooms can go 15+ years. Signs it's time: visible scratches through the finish to bare wood, dull gray areas where finish has worn away, or water no longer beads on the surface. A maintenance coat (screen and recoat) every 3–5 years can extend the time between full refinishes.</p></div>
                 </div>
 
@@ -234,8 +223,8 @@
             <h2>Still Have Questions?</h2>
             <p>Call us or send a message — we're happy to discuss your specific floor situation and provide a free, no-obligation estimate.</p>
             <div class="cta-buttons">
-                <a href="tel:+15095550147" class="btn btn-white"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg> Call (509) 555-0147</a>
-                <a href="contact.html" class="btn btn-outline-white">Contact Us</a>
+                <a href="tel:+15095550147" class="btn btn-white btn-magnetic"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg> Call (509) 555-0147</a>
+                <a href="contact.html" class="btn btn-outline-white btn-magnetic">Contact Us</a>
             </div>
         </div>
     </section>
@@ -273,12 +262,16 @@
     <script src="https://cdn.jsdelivr.net/npm/splitting/dist/splitting.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/aos@2/dist/aos.js"></script>
     <script src="js/animations.js"></script>
+    <!-- Animation Libraries JS -->
+    <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.8.1/dist/vanilla-tilt.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/splitting/dist/splitting.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2/dist/aos.js"></script>
+    <script src="js/animations.js"></script>
 
-    <script>
-    const toggle=document.querySelector('.menu-toggle'),nav=document.querySelector('.nav-links');if(toggle&&nav){toggle.addEventListener('click',()=>{const e=toggle.getAttribute('aria-expanded')==='true';toggle.setAttribute('aria-expanded',!e);nav.classList.toggle('active');});}
-    window.addEventListener('scroll',()=>{document.getElementById('header').classList.toggle('scrolled',window.scrollY>50);});
-    setTimeout(function(){var f=document.getElementById('floatingCta');if(f)f.classList.add('visible');},2000);
-    (function(){var e=document.querySelectorAll('.reveal');if(!e.length)return;var o=new IntersectionObserver(function(n){n.forEach(function(i){if(i.isIntersecting){i.target.classList.add('revealed');o.unobserve(i.target);}});},{threshold:0.15});e.forEach(function(i){o.observe(i);});})();
-    </script>
 </body>
 </html>
