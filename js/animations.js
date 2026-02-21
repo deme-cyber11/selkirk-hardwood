@@ -408,11 +408,10 @@
 
   // ── Before/After Comparison Slider ──
   function initBeforeAfter() {
-    document.querySelectorAll('.ba-comparison').forEach((container) => {
-      const slider = container.querySelector('.ba-slider');
+    document.querySelectorAll('.ba-slider').forEach((container) => {
       const beforeImg = container.querySelector('.ba-before');
       const handle = container.querySelector('.ba-handle');
-      if (!slider || !beforeImg || !handle) return;
+      if (!beforeImg || !handle) return;
 
       let isDragging = false;
 
