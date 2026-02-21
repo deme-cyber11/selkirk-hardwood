@@ -26,6 +26,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1/dist/lenis.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/splitting/dist/splitting.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2/dist/aos.css">
     <link rel="stylesheet" href="css/styles.css">
 
     <script type="application/ld+json">
@@ -224,7 +229,7 @@
         </div>
     </section>
 
-    <section class="cta-section">
+    <section class="cta-section" data-aos="fade-up">
         <div class="container text-center">
             <h2>Still Have Questions?</h2>
             <p>Call us or send a message — we're happy to discuss your specific floor situation and provide a free, no-obligation estimate.</p>
@@ -256,6 +261,18 @@
         <a href="tel:+15095550147" class="fcta-call" aria-label="Call us"><span class="fcta-label">Call Now</span><span class="fcta-mobile-label">📞 Call</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg></a>
         <a href="sms:+15095550147" class="fcta-text" aria-label="Text us"><span class="fcta-label">Text Us</span><span class="fcta-mobile-label">💬 Text</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 01-2.555-.337A5.972 5.972 0 015.41 20.97a5.969 5.969 0 01-.474-.065 4.48 4.48 0 00.978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25z"/></svg></a>
     </div>
+
+    <!-- Animation Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lenis@1/dist/lenis.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1/dist/vanilla-tilt.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/splitting/dist/splitting.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2/dist/aos.js"></script>
+    <script src="js/animations.js"></script>
 
     <script>
     const toggle=document.querySelector('.menu-toggle'),nav=document.querySelector('.nav-links');if(toggle&&nav){toggle.addEventListener('click',()=>{const e=toggle.getAttribute('aria-expanded')==='true';toggle.setAttribute('aria-expanded',!e);nav.classList.toggle('active');});}

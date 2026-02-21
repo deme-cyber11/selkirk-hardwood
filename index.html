@@ -27,6 +27,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1/dist/lenis.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/splitting/dist/splitting.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2/dist/aos.css">
     <link rel="stylesheet" href="css/styles.css">
 
     <script type="application/ld+json">
@@ -129,7 +134,7 @@
         <div class="hero-content">
             <div class="hero-text">
                 <span class="hero-label fade-in">Spokane's Inland Northwest Floor Refinishing Craftsmen</span>
-                <h1 class="fade-in fade-in-1">Spokane Hardwood Floor Refinishing That Lasts for Decades</h1>
+                <h1 class="fade-in fade-in-1">Spokane <span id="typed-heading"></span> Floor Refinishing That Lasts for Decades</h1>
                 <p class="hero-desc fade-in fade-in-2">Locally owned and NWFA certified, we restore hardwood floors across the Inland Northwest with dustless sanding technology, 40+ custom stain colors, and a 3-year finish warranty on every project. From South Hill Craftsman bungalows to Spokane Valley family homes — we treat every floor like it's our own.</p>
                 <div class="hero-buttons fade-in fade-in-3">
                     <a href="contact.html" class="btn btn-primary">Get Your Free Estimate</a>
@@ -202,14 +207,14 @@
         </div>
     </div>
 
-    <section id="services">
+    <section id="services" data-aos="fade-up">
         <div class="container text-center">
             <span class="section-label">What We Do</span>
-            <h2 class="section-title">Hardwood Floor Services for Spokane Homeowners</h2>
+            <h2 class="section-title split-text">Hardwood Floor Services for Spokane Homeowners</h2>
             <p class="section-subtitle mx-auto">From whole-house refinishing to precision repairs, we handle every hardwood floor project with NWFA-certified technique and commercial-grade materials built for the Inland Northwest's demanding climate.</p>
 
             <div class="services-grid reveal">
-                <div class="card service-card">
+                <div class="card service-card" data-tilt>
                     <span class="high-margin-badge">Most Popular</span>
                     <div class="service-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"/></svg>
@@ -220,7 +225,7 @@
                     <br><a href="services.html" class="learn-more">Learn More →</a>
                 </div>
 
-                <div class="card service-card">
+                <div class="card service-card" data-tilt>
                     <span class="high-margin-badge">Premium</span>
                     <div class="service-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
@@ -231,7 +236,7 @@
                     <br><a href="services.html" class="learn-more">Learn More →</a>
                 </div>
 
-                <div class="card service-card">
+                <div class="card service-card" data-tilt>
                     <span class="high-margin-badge">High Value</span>
                     <div class="service-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.098 19.902a3.75 3.75 0 005.304 0l6.401-6.402M6.75 21A3.75 3.75 0 013 17.25V4.125C3 3.504 3.504 3 4.125 3h5.25c.621 0 1.125.504 1.125 1.125v4.072M6.75 21a3.75 3.75 0 003.75-3.75V8.197M6.75 21h13.125c.621 0 1.125-.504 1.125-1.125v-5.25c0-.621-.504-1.125-1.125-1.125h-4.072M10.5 8.197l2.88-2.88c.438-.439 1.15-.439 1.59 0l3.712 3.713c.44.44.44 1.152 0 1.59l-2.879 2.88M6.75 17.25h.008v.008H6.75v-.008z"/></svg>
@@ -242,7 +247,7 @@
                     <br><a href="services.html" class="learn-more">Learn More →</a>
                 </div>
 
-                <div class="card service-card">
+                <div class="card service-card" data-tilt>
                     <div class="service-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21"/></svg>
                     </div>
@@ -252,7 +257,7 @@
                     <br><a href="services.html" class="learn-more">Learn More →</a>
                 </div>
 
-                <div class="card service-card">
+                <div class="card service-card" data-tilt>
                     <div class="service-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17l-5.384 5.383a1.818 1.818 0 01-2.57-2.57l5.383-5.384m2.571 2.571L20.28 6.29a2.572 2.572 0 00-3.636-3.636L9.783 9.513m1.637 5.657l1.637 1.637"/></svg>
                     </div>
@@ -262,7 +267,7 @@
                     <br><a href="services.html" class="learn-more">Learn More →</a>
                 </div>
 
-                <div class="card service-card">
+                <div class="card service-card" data-tilt>
                     <div class="service-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M6.429 9.75L2.25 12l4.179 2.25m0-4.5l5.571 3 5.571-3m-11.142 0L2.25 7.5 12 2.25l9.75 5.25-4.179 2.25m0 0L12 12.75l-5.571-3m11.142 0l4.179 2.25L12 17.25 2.25 12l4.179-2.25"/></svg>
                     </div>
@@ -275,11 +280,11 @@
         </div>
     </section>
 
-    <section style="background: var(--surface);">
+    <section style="background: var(--surface);" data-aos="fade-up">
         <div class="container">
             <div class="text-center">
                 <span class="section-label">Why Spokane Homeowners Choose Us</span>
-                <h2 class="section-title">Built for the Inland Northwest. Backed by Craftsmanship.</h2>
+                <h2 class="section-title split-text">Built for the Inland Northwest. Backed by Craftsmanship.</h2>
                 <p class="section-subtitle mx-auto">Spokane's climate is tough on hardwood — dry winters with single-digit humidity, 80°F temperature swings between seasons, and heavy furnace use that sucks moisture from wood. Our process accounts for every one of these factors.</p>
             </div>
 
@@ -332,22 +337,22 @@
                 </div>
                 <div>
                     <span class="section-label">About Us</span>
-                    <h2 class="section-title">Locally Owned. Spokane Built.</h2>
+                    <h2 class="section-title split-text">Locally Owned. Spokane Built.</h2>
                     <p>Selkirk Hardwood started in 2015 when our founder saw too many Inland Northwest homeowners getting franchise-level work at premium prices. We believed Spokane deserved a locally owned crew that actually understood the challenges hardwood faces in our climate — the bone-dry winters that crack finishes, the temperature swings that test every board joint, and the heavy furnace use that pulls moisture from wood throughout the season.</p>
                     <p style="margin-top: 1rem;">We've since refinished over 400 homes across the region, from 1910s Craftsman bungalows on South Hill to newer builds in Liberty Lake. Every project gets the same treatment: NWFA-certified technique, Bona Mega ONE commercial-grade finish, and a 3-year warranty we stand behind completely.</p>
                     <p style="margin-top: 1rem;">Whether you're a Gonzaga family prepping your South Hill rental, a Fairchild Air Force Base family getting move-out ready, or a homeowner restoring original fir floors in a Browne's Addition Victorian — we approach every floor like it's our own.</p>
 
                     <div class="about-stats">
                         <div class="stat">
-                            <div class="stat-number">400+</div>
+                            <div class="stat-number counter" data-target="400" data-suffix="+">0</div>
                             <div class="stat-label">Projects Completed</div>
                         </div>
                         <div class="stat">
-                            <div class="stat-number">10+</div>
+                            <div class="stat-number counter" data-target="10" data-suffix="+">0</div>
                             <div class="stat-label">Years in Business</div>
                         </div>
                         <div class="stat">
-                            <div class="stat-number">4.9★</div>
+                            <div class="stat-number counter" data-target="4.9" data-suffix="★">0</div>
                             <div class="stat-label">Average Rating</div>
                         </div>
                     </div>
@@ -358,36 +363,51 @@
         </div>
     </section>
 
-    <section style="background: var(--surface);">
+    <section style="background: var(--surface);" data-aos="fade-up">
         <div class="container text-center">
             <span class="section-label">Our Work</span>
-            <h2 class="section-title">Recent Hardwood Floor Projects in Spokane</h2>
+            <h2 class="section-title split-text">Recent Hardwood Floor Projects in Spokane</h2>
             <p class="section-subtitle mx-auto">Browse recent refinishing projects from homes across the Inland Northwest. Every floor is sanded, stained, and finished by our NWFA-certified crew.</p>
-            <div class="gallery-grid reveal">
-                <div class="gallery-item">
-                    <img src="images/gallery/project-living-room.webp" alt="Red oak hardwood floor refinishing in a Spokane South Hill living room" width="600" height="450" loading="lazy">
-                    <div class="gallery-caption">Red Oak — Living Room</div>
+            <div class="swiper gallery-swiper reveal">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide gallery-item">
+                        <a class="glightbox" href="images/gallery/project-living-room.webp" data-gallery="gallery1">
+                            <img src="images/gallery/project-living-room.webp" alt="Red oak hardwood floor refinishing in a Spokane South Hill living room" width="600" height="450" loading="lazy">
+                            <div class="gallery-caption">Red Oak — Living Room</div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide gallery-item">
+                        <a class="glightbox" href="images/gallery/project-kitchen.webp" data-gallery="gallery1">
+                            <img src="images/gallery/project-kitchen.webp" alt="Hickory hardwood floors refinished in a Spokane Valley open kitchen" width="600" height="450" loading="lazy">
+                            <div class="gallery-caption">Hickory — Open Kitchen</div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide gallery-item">
+                        <a class="glightbox" href="images/gallery/project-entryway.webp" data-gallery="gallery1">
+                            <img src="images/gallery/project-entryway.webp" alt="Restored historic entryway and staircase hardwood floors in Spokane" width="600" height="450" loading="lazy">
+                            <div class="gallery-caption">Historic Entryway Restoration</div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide gallery-item">
+                        <a class="glightbox" href="images/gallery/project-master-bedroom.webp" data-gallery="gallery1">
+                            <img src="images/gallery/project-master-bedroom.webp" alt="White oak hardwood floor refinishing in a Spokane master bedroom" width="600" height="450" loading="lazy">
+                            <div class="gallery-caption">White Oak — Master Bedroom</div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide gallery-item">
+                        <a class="glightbox" href="images/gallery/project-whole-house.webp" data-gallery="gallery1">
+                            <img src="images/gallery/project-whole-house.webp" alt="Whole house hardwood floor refinishing hallway in Spokane" width="600" height="450" loading="lazy">
+                            <div class="gallery-caption">Whole-House Refinish</div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide gallery-item">
+                        <a class="glightbox" href="images/gallery/project-dining-room.webp" data-gallery="gallery1">
+                            <img src="images/gallery/project-dining-room.webp" alt="Maple hardwood floor refinishing in a Spokane dining room" width="600" height="450" loading="lazy">
+                            <div class="gallery-caption">Maple — Dining Room</div>
+                        </a>
+                    </div>
                 </div>
-                <div class="gallery-item">
-                    <img src="images/gallery/project-kitchen.webp" alt="Hickory hardwood floors refinished in a Spokane Valley open kitchen" width="600" height="450" loading="lazy">
-                    <div class="gallery-caption">Hickory — Open Kitchen</div>
-                </div>
-                <div class="gallery-item">
-                    <img src="images/gallery/project-entryway.webp" alt="Restored historic entryway and staircase hardwood floors in Spokane" width="600" height="450" loading="lazy">
-                    <div class="gallery-caption">Historic Entryway Restoration</div>
-                </div>
-                <div class="gallery-item">
-                    <img src="images/gallery/project-master-bedroom.webp" alt="White oak hardwood floor refinishing in a Spokane master bedroom" width="600" height="450" loading="lazy">
-                    <div class="gallery-caption">White Oak — Master Bedroom</div>
-                </div>
-                <div class="gallery-item">
-                    <img src="images/gallery/project-whole-house.webp" alt="Whole house hardwood floor refinishing hallway in Spokane" width="600" height="450" loading="lazy">
-                    <div class="gallery-caption">Whole-House Refinish</div>
-                </div>
-                <div class="gallery-item">
-                    <img src="images/gallery/project-dining-room.webp" alt="Maple hardwood floor refinishing in a Spokane dining room" width="600" height="450" loading="lazy">
-                    <div class="gallery-caption">Maple — Dining Room</div>
-                </div>
+                <div class="swiper-pagination swiper-pagination-gallery"></div>
             </div>
         </div>
     </section>
@@ -395,40 +415,42 @@
     <section>
         <div class="container text-center">
             <span class="section-label">Before &amp; After</span>
-            <h2 class="section-title">See the Transformation</h2>
+            <h2 class="section-title split-text">See the Transformation</h2>
             <p class="section-subtitle mx-auto">Real results from Spokane hardwood floor refinishing projects. The difference speaks for itself.</p>
             <div class="before-after-grid reveal">
                 <div>
                     <h3 style="margin-bottom: 1rem; font-size: 1.1rem;">Scratched &amp; Worn Floors</h3>
-                    <div class="before-after-pair">
-                        <div class="ba-img">
-                            <span class="ba-label before">Before</span>
+                    <div class="ba-slider">
+                        <div class="ba-before">
                             <img src="images/before-after/before-scratched.webp" alt="Before: scratched worn hardwood floors in Spokane home" width="400" height="300" loading="lazy">
+                            <span class="ba-label before">Before</span>
                         </div>
-                        <div class="ba-img">
-                            <span class="ba-label after">After</span>
+                        <div class="ba-after">
                             <img src="images/before-after/after-scratched.webp" alt="After: beautifully restored hardwood floors in Spokane home" width="400" height="300" loading="lazy">
+                            <span class="ba-label after">After</span>
                         </div>
+                        <div class="ba-handle"><span class="ba-handle-line"></span></div>
                     </div>
                 </div>
                 <div>
                     <h3 style="margin-bottom: 1rem; font-size: 1.1rem;">Sun-Damaged Floors</h3>
-                    <div class="before-after-pair">
-                        <div class="ba-img">
-                            <span class="ba-label before">Before</span>
+                    <div class="ba-slider">
+                        <div class="ba-before">
                             <img src="images/before-after/before-sun-damaged.webp" alt="Before: sun-faded hardwood floors in Spokane home" width="400" height="300" loading="lazy">
+                            <span class="ba-label before">Before</span>
                         </div>
-                        <div class="ba-img">
-                            <span class="ba-label after">After</span>
+                        <div class="ba-after">
                             <img src="images/before-after/after-sun-damaged.webp" alt="After: refinished sun-damaged hardwood floors in Spokane" width="400" height="300" loading="lazy">
+                            <span class="ba-label after">After</span>
                         </div>
+                        <div class="ba-handle"><span class="ba-handle-line"></span></div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="cta-section cta-section-bg" style="background-image: url('images/textures/wood-grain-dark.webp')">
+    <section class="cta-section cta-section-bg" data-aos="fade-up" style="background-image: url('images/textures/wood-grain-dark.webp')">
         <div class="container text-center">
             <span class="section-label" style="color: var(--accent);">Ready to Restore Your Floors?</span>
             <h2>Get a Free Hardwood Floor Refinishing Estimate</h2>
@@ -443,46 +465,55 @@
         </div>
     </section>
 
-    <section class="testimonials-section">
+    <section class="testimonials-section" data-aos="fade-up">
         <div class="container text-center">
             <span class="section-label">What Our Customers Say</span>
-            <h2 class="section-title">Real Reviews from Spokane Homeowners</h2>
+            <h2 class="section-title split-text">Real Reviews from Spokane Homeowners</h2>
             <p class="section-subtitle mx-auto">Every review comes from a real project in the Inland Northwest. We're proud that most of our work comes from referrals and repeat customers.</p>
 
-            <div class="testimonials-grid reveal">
-                <div class="testimonial-card">
-                    <div class="testimonial-stars">★★★★★</div>
-                    <p class="testimonial-text">"They refinished 1,200 square feet of original 1924 fir in our South Hill Craftsman. The floors had nearly a century of scratches and three layers of old finish. Now they look better than the day they were installed. The dustless system was a lifesaver — we stayed in the house with our two dogs the entire time."</p>
-                    <div class="testimonial-author">
-                        <div class="testimonial-avatar">KM</div>
-                        <div>
-                            <div class="testimonial-name">Karen M.</div>
-                            <div class="testimonial-location">South Hill</div>
+            <div class="swiper testimonials-swiper reveal">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-stars">★★★★★</div>
+                            <p class="testimonial-text">"They refinished 1,200 square feet of original 1924 fir in our South Hill Craftsman. The floors had nearly a century of scratches and three layers of old finish. Now they look better than the day they were installed. The dustless system was a lifesaver — we stayed in the house with our two dogs the entire time."</p>
+                            <div class="testimonial-author">
+                                <div class="testimonial-avatar">KM</div>
+                                <div>
+                                    <div class="testimonial-name">Karen M.</div>
+                                    <div class="testimonial-location">South Hill</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-stars">★★★★★</div>
+                            <p class="testimonial-text">"We wanted to go from the orangey builder-grade oak stain to something modern before listing our Spokane Valley home. They applied four test patches and helped us pick a warm espresso tone that made the whole house feel different. Our realtor said the floors alone added $10K to the listing price."</p>
+                            <div class="testimonial-author">
+                                <div class="testimonial-avatar">JT</div>
+                                <div>
+                                    <div class="testimonial-name">Jason T.</div>
+                                    <div class="testimonial-location">Spokane Valley</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-stars">★★★★★</div>
+                            <p class="testimonial-text">"I was honestly skeptical after a bad experience with a franchise company that left sanding marks all over our dining room. Selkirk Hardwood came in, fixed the previous damage, and refinished our entire first floor. Night and day difference. Should have called them first."</p>
+                            <div class="testimonial-author">
+                                <div class="testimonial-avatar">LP</div>
+                                <div>
+                                    <div class="testimonial-name">Linda P.</div>
+                                    <div class="testimonial-location">North Side</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-stars">★★★★★</div>
-                    <p class="testimonial-text">"We wanted to go from the orangey builder-grade oak stain to something modern before listing our Spokane Valley home. They applied four test patches and helped us pick a warm espresso tone that made the whole house feel different. Our realtor said the floors alone added $10K to the listing price."</p>
-                    <div class="testimonial-author">
-                        <div class="testimonial-avatar">JT</div>
-                        <div>
-                            <div class="testimonial-name">Jason T.</div>
-                            <div class="testimonial-location">Spokane Valley</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-stars">★★★★★</div>
-                    <p class="testimonial-text">"I was honestly skeptical after a bad experience with a franchise company that left sanding marks all over our dining room. Selkirk Hardwood came in, fixed the previous damage, and refinished our entire first floor. Night and day difference. Should have called them first."</p>
-                    <div class="testimonial-author">
-                        <div class="testimonial-avatar">LP</div>
-                        <div>
-                            <div class="testimonial-name">Linda P.</div>
-                            <div class="testimonial-location">North Side</div>
-                        </div>
-                    </div>
-                </div>
+                <div class="swiper-pagination swiper-pagination-testimonials"></div>
             </div>
 
             <div style="max-width: 800px; margin: 2rem auto 0; text-align: left;">
@@ -515,7 +546,7 @@
     <section>
         <div class="container text-center">
             <span class="section-label">Where We Work</span>
-            <h2 class="section-title">Hardwood Floor Refinishing Across the Inland Northwest</h2>
+            <h2 class="section-title split-text">Hardwood Floor Refinishing Across the Inland Northwest</h2>
             <p class="section-subtitle mx-auto">We serve Spokane and surrounding communities within a 30-mile radius. From the historic homes of South Hill to the newer builds in Liberty Lake — we refinish floors across Spokane County and beyond.</p>
 
             <div class="areas-grid reveal">
@@ -571,10 +602,10 @@
         </div>
     </section>
 
-    <section class="faq-section">
+    <section class="faq-section" data-aos="fade-up">
         <div class="container text-center">
             <span class="section-label">Common Questions</span>
-            <h2 class="section-title">Hardwood Floor Refinishing FAQ</h2>
+            <h2 class="section-title split-text">Hardwood Floor Refinishing FAQ</h2>
             <p class="section-subtitle mx-auto">Answers to the most common questions we hear from Spokane homeowners about hardwood floor refinishing, costs, and our process.</p>
 
             <div class="faq-list">
@@ -703,6 +734,18 @@
         <a href="contact.html" class="btn btn-primary">Free Estimate</a>
         <button class="scta-close" onclick="document.getElementById('scrollCtaBanner').remove()" aria-label="Close">&times;</button>
     </div>
+
+    <!-- Animation Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lenis@1/dist/lenis.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1/dist/vanilla-tilt.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/splitting/dist/splitting.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2/dist/aos.js"></script>
+    <script src="js/animations.js"></script>
 
     <script>
     const toggle = document.querySelector('.menu-toggle');
