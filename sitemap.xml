@@ -2,112 +2,110 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://selkirkhardwood.com/</loc>
-    <lastmod>2026-02-21</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-02-23</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://selkirkhardwood.com/services.html</loc>
-    <lastmod>2026-02-21</lastmod>
+    <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://selkirkhardwood.com/cost-guide.html</loc>
-    <lastmod>2026-02-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://selkirkhardwood.com/about.html</loc>
-    <lastmod>2026-02-21</lastmod>
+    <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://selkirkhardwood.com/contact.html</loc>
-    <lastmod>2026-02-21</lastmod>
+    <lastmod>2026-02-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://selkirkhardwood.com/cost-guide.html</loc>
+    <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://selkirkhardwood.com/faq.html</loc>
-    <lastmod>2026-02-21</lastmod>
+    <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <!-- Location Pages -->
   <url>
     <loc>https://selkirkhardwood.com/locations/south-hill.html</loc>
-    <lastmod>2026-02-21</lastmod>
+    <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://selkirkhardwood.com/locations/spokane-valley.html</loc>
-    <lastmod>2026-02-21</lastmod>
+    <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://selkirkhardwood.com/locations/liberty-lake.html</loc>
-    <lastmod>2026-02-21</lastmod>
+    <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://selkirkhardwood.com/locations/north-spokane.html</loc>
-    <lastmod>2026-02-21</lastmod>
+    <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://selkirkhardwood.com/locations/brownes-addition.html</loc>
-    <lastmod>2026-02-21</lastmod>
+    <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://selkirkhardwood.com/locations/cheney.html</loc>
-    <lastmod>2026-02-21</lastmod>
+    <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.6</priority>
   </url>
-  <!-- Blog Pages -->
   <url>
     <loc>https://selkirkhardwood.com/blog/index.html</loc>
-    <lastmod>2026-02-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <lastmod>2026-02-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://selkirkhardwood.com/blog/hardwood-floor-refinishing-cost-spokane.html</loc>
-    <lastmod>2026-02-21</lastmod>
+    <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://selkirkhardwood.com/blog/how-long-does-hardwood-refinishing-take.html</loc>
-    <lastmod>2026-02-21</lastmod>
+    <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://selkirkhardwood.com/blog/pet-damage-hardwood-floor-repair-spokane.html</loc>
-    <lastmod>2026-02-21</lastmod>
+    <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://selkirkhardwood.com/blog/refinish-vs-replace-hardwood-floors.html</loc>
-    <lastmod>2026-02-21</lastmod>
+    <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://selkirkhardwood.com/blog/best-hardwood-species-pacific-northwest.html</loc>
-    <lastmod>2026-02-21</lastmod>
+    <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
   </url>
 </urlset>
