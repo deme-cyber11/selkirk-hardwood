@@ -121,6 +121,42 @@
     });
   }
 
+  // Counter Animation
+  function initCounters() {
+    var counters = document.querySelectorAll('.stat-number [data-counter], .stat-number[data-counter]');
+    if (!counters.length) return;
+
+    function animateCounter(el) {
+      var target = parseFloat(el.getAttribute('data-counter'));
+      var suffix = el.getAttribute('data-suffix') || '';
+      var decimals = parseInt(el.getAttribute('data-decimals')) || 0;
+      var duration = 2000;
+      var start = performance.now();
+
+      function update(now) {
+        var elapsed = now - start;
+        var progress = Math.min(elapsed / duration, 1);
+        // ease-out cubic
+        var ease = 1 - Math.pow(1 - progress, 3);
+        var current = ease * target;
+        el.textContent = current.toFixed(decimals) + suffix;
+        if (progress < 1) requestAnimationFrame(update);
+      }
+      requestAnimationFrame(update);
+    }
+
+    var observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          animateCounter(entry.target);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.3 });
+
+    counters.forEach(function(el) { observer.observe(el); });
+  }
+
   function init() {
     initMobileMenu();
     initFAQ();
@@ -129,6 +165,7 @@
     initActiveNav();
     initBeforeAfter();
     forceVisible();
+    initCounters();
   }
 
   if (document.readyState === 'loading') {
