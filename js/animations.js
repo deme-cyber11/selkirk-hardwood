@@ -7,7 +7,8 @@
     var header = document.querySelector('.header');
     if (!toggle || !navLinks) return;
 
-    toggle.addEventListener('click', function() {
+    toggle.addEventListener('click', function(e) {
+      e.stopPropagation();
       navLinks.classList.toggle('active');
       toggle.classList.toggle('active');
       toggle.setAttribute('aria-expanded',
@@ -22,7 +23,7 @@
     });
 
     document.addEventListener('click', function(e) {
-      if (!header.contains(e.target)) {
+      if (!toggle.contains(e.target) && !navLinks.contains(e.target)) {
         navLinks.classList.remove('active');
         toggle.classList.remove('active');
       }
