@@ -62,15 +62,15 @@
   </url>
   <url>
     <loc>https://selkirkhardwood.com/locations/spokane-valley.html</loc>
-    <lastmod>2026-02-23</lastmod>
+    <lastmod>2026-03-09</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.85</priority>
   </url>
   <url>
     <loc>https://selkirkhardwood.com/locations/liberty-lake.html</loc>
-    <lastmod>2026-02-23</lastmod>
+    <lastmod>2026-03-09</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.85</priority>
   </url>
   <url>
     <loc>https://selkirkhardwood.com/locations/north-spokane.html</loc>
@@ -86,9 +86,27 @@
   </url>
   <url>
     <loc>https://selkirkhardwood.com/locations/cheney.html</loc>
-    <lastmod>2026-02-23</lastmod>
+    <lastmod>2026-03-09</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://selkirkhardwood.com/locations/coeur-d-alene-id.html</loc>
+    <lastmod>2026-03-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://selkirkhardwood.com/locations/post-falls-id.html</loc>
+    <lastmod>2026-03-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://selkirkhardwood.com/locations/airway-heights.html</loc>
+    <lastmod>2026-03-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
   </url>
   <url>
     <loc>https://selkirkhardwood.com/blog/index.html</loc>
