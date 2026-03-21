@@ -125,7 +125,7 @@ gtag('config', 'G-HRB1ZYGZYF');
                 <div class="content-section">
                     <h2>Request a Free Estimate</h2>
                     <form action="https://api.web3forms.com/submit" method="POST">
-                        <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_KEY">
+                        <input type="hidden" name="access_key" value="0219881f-13e5-4175-b720-517b8d10c028">
                         <input type="hidden" name="redirect" value="https://selkirkhardwood.com/thank-you.html">
                         <input type="hidden" name="subject" value="New Estimate Request — Selkirk Hardwood">
 
@@ -164,8 +164,11 @@ gtag('config', 'G-HRB1ZYGZYF');
                         </div>
 
                         <div style="margin-bottom: 1.25rem;">
-                            <label for="message" style="display: block; font-weight: 600; margin-bottom: 0.4rem;">Tell Us About Your Project</label>
-                            <textarea id="message" name="message" rows="5" aria-label="Describe your hardwood floor project" style="width: 100%; padding: 0.75rem; border: 1px solid #ddd; border-radius: 8px; font-size: 1rem; resize: vertical;" placeholder="Describe your floors, any damage, what you'd like done..."></textarea>
+            <div class="form-group">
+              <label for="address">Property Address *</label>
+              <input type="text" id="address" name="address" required placeholder="123 Main St, Spokane, WA 99201">
+            </div>                            <label for="message" style="display: block; font-weight: 600; margin-bottom: 0.4rem;">Tell Us About Your Project</label>
+                            <textarea id="message" name="message" required rows="5" aria-label="Describe your hardwood floor project" style="width: 100%; padding: 0.75rem; border: 1px solid #ddd; border-radius: 8px; font-size: 1rem; resize: vertical;" placeholder="Describe your floors, any damage, what you'd like done..."></textarea>
                         </div>
 
                         <button type="submit" class="btn btn-primary btn-magnetic" style="width: 100%; padding: 1rem; font-size: 1.05rem;">Send Estimate Request</button>
