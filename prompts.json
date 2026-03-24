@@ -1,0 +1,23 @@
+[
+  {
+    "index": 1,
+    "slug": "floor-repair-hero",
+    "prompt": "Hardwood floor repair specialist replacing damaged oak floorboards in a craftsman-style home in Spokane Washington, technician on hands and knees carefully fitting a new plank into a section where old warped boards have been removed, wood shavings and tools laid out on a protective cloth, original 1920s craftsman interior with built-in bookshelves and warm woodwork visible in the background, soft natural daylight from a large window illuminating the work area, Pacific Northwest overcast light filtering through, shot on Canon EOS R5 with 35mm f/1.4 lens, low angle close-up of the repair work showing wood grain detail, photorealistic documentary craftsmanship photography",
+    "negative_prompt": "cartoon, illustration, anime, CGI, 3D render, watermark, text overlay, stock photo watermark, oversaturated colors, blurry, low resolution",
+    "category": "hero"
+  },
+  {
+    "index": 2,
+    "slug": "hardwood-installation-hero",
+    "prompt": "Professional hardwood floor installation in a Spokane Washington living room, installer using a pneumatic flooring nailer to secure tongue-and-groove red oak planks across a large open floor plan, rows of new unfinished hardwood planks stacked nearby ready for installation, spacious Pacific Northwest home with large windows showing pine trees and the Spokane landscape outside, bright even daylight streaming across the partially completed floor showing the transition from subfloor to new hardwood, shot on Sony A7R IV with 24-70mm f/2.8 GM lens, wide angle composition from floor level emphasizing the long straight plank lines receding into perspective, photorealistic interior construction photography",
+    "negative_prompt": "cartoon, illustration, anime, CGI, 3D render, watermark, text overlay, stock photo watermark, oversaturated colors, blurry, low resolution",
+    "category": "hero"
+  },
+  {
+    "index": 3,
+    "slug": "hardwood-refinishing-hero",
+    "prompt": "Hardwood floor refinishing in progress in a Spokane Washington home, professional operating a large drum sander on a dining room floor with decades of old finish being sanded down to reveal beautiful raw white oak underneath, fine sawdust in the air caught in a beam of window light, half the floor showing dark worn old finish and the other half showing fresh sanded wood, classic Spokane South Hill neighborhood home interior with crown molding and period details, shot on Nikon Z7 II with 50mm f/1.8 lens, medium angle capturing the dramatic contrast between old and new surfaces, photorealistic renovation documentation photography with natural Pacific Northwest window light",
+    "negative_prompt": "cartoon, illustration, anime, CGI, 3D render, watermark, text overlay, stock photo watermark, oversaturated colors, blurry, low resolution",
+    "category": "hero"
+  }
+]
