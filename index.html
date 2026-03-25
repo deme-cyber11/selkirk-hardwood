@@ -833,5 +833,24 @@
     <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.8.1/dist/vanilla-tilt.min.js"></script>
     <script src="js/animations.js?v=1771824885"></script>
+
+<!-- Mobile Sticky CTA Bar -->
+<div class="mobile-cta-bar" id="mobileCta" style="display:none;position:fixed;bottom:0;left:0;right:0;z-index:9999;background:#1a1a2e;padding:12px 16px;display:flex;gap:10px;box-shadow:0 -2px 12px rgba(0,0,0,0.25);">
+  <a href="tel:+15094619375" style="flex:1;background:#8B6914;color:#fff;text-align:center;padding:13px 8px;border-radius:6px;font-weight:700;font-size:1rem;text-decoration:none;min-height:48px;display:flex;align-items:center;justify-content:center;">📞 Call Now</a>
+  <a href="contact.html" style="flex:1;background:#f5f5f5;color:#1a1a2e;text-align:center;padding:13px 8px;border-radius:6px;font-weight:700;font-size:1rem;text-decoration:none;min-height:48px;display:flex;align-items:center;justify-content:center;">Free Estimate</a>
+</div>
+<script>
+(function(){
+  var bar = document.getElementById('mobileCta');
+  if(!bar) return;
+  if(window.innerWidth <= 768) {
+    bar.style.display = 'flex';
+    document.body.style.paddingBottom = '80px';
+  }
+  window.addEventListener('scroll', function(){
+    bar.style.opacity = window.scrollY > 200 ? '1' : '0.85';
+  }, {passive:true});
+})();
+</script>
 </body>
 </html>
