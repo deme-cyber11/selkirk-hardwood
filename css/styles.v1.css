@@ -1,35 +1,34 @@
 /* ============================================
-   Selkirk Hardwood — Styles
+   Selkirk Hardwood — Styles (v2.5 retrofit)
    Premium rank & rent site — Spokane, WA
-   Pacific Northwest color palette
-   Modernized with glassmorphism, gradients,
-   animation states, Swiper/GLightbox integration
+   Palette: Selkirk slate + Inland Northwest amber
+   Pacific Northwest craftsman aesthetic
    ============================================ */
 
 /* --- Reset & Base --- */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --primary: #1a2e1a;
-  --primary-dark: #0f1c0f;
-  --primary-light: #e8f0e8;
-  --accent: #5b8c3e;
-  --accent-dark: #477030;
-  --accent-light: #ddecd0;
+  --primary: #2c3e50;
+  --primary-dark: #1c2a38;
+  --primary-light: #eaeff4;
+  --accent: #c9923d;
+  --accent-dark: #a3762d;
+  --accent-light: #f5e9d2;
   --surface: #ffffff;
-  --bg: #f7faf5;
-  --text: #1a2e1a;
-  --text-muted: #4a5e4a;
-  --text-light: #7a8e7a;
-  --border: #d4e0d4;
+  --bg: #f5f2ec;
+  --text: #1c2a38;
+  --text-muted: #4a5966;
+  --text-light: #7a8898;
+  --border: #d9d4c9;
   --radius-sm: 8px;
   --radius-md: 16px;
   --radius-lg: 24px;
   --radius-full: 100px;
-  --shadow-sm: 0 1px 3px rgba(26,46,26,0.06);
-  --shadow-md: 0 4px 20px rgba(26,46,26,0.08);
-  --shadow-lg: 0 8px 40px rgba(26,46,26,0.12);
-  --shadow-xl: 0 20px 60px rgba(26,46,26,0.16);
+  --shadow-sm: 0 1px 3px rgba(44,62,80,0.06);
+  --shadow-md: 0 4px 20px rgba(44,62,80,0.08);
+  --shadow-lg: 0 8px 40px rgba(44,62,80,0.12);
+  --shadow-xl: 0 20px 60px rgba(44,62,80,0.16);
   --container-max: 1200px;
   --transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
   --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
@@ -55,11 +54,11 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'DM Sans', 'Inter', system-ui, sans-serif;
+  font-family: 'Merriweather', 'Georgia', serif;
   font-weight: 700;
-  line-height: 1.15;
+  line-height: 1.2;
   color: var(--primary);
-  letter-spacing: -0.02em;
+  letter-spacing: -0.015em;
 }
 
 h1 { font-size: clamp(2.4rem, 5.5vw, 3.8rem); }
