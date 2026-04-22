@@ -1,7 +1,7 @@
 /* ============================================
-   Elkhorn Hardwood — Styles (v2.5 palette retrofit)
-   Palette: walnut #2d1810 / copper #c87533 / cream #f8f5f0
-   Fonts: Inter (display) + DM Sans (body)
+   Selkirk Hardwood — Styles (v2.5 palette retrofit)
+   Palette: forest #1d2418 / copper #b8804a / cream #f8f5f0
+   Fonts: Space Grotesk (display) + DM Sans (body)
    Structure: v1 layout + v2.5 design tokens (additive)
    ============================================ */
 
@@ -2055,7 +2055,8 @@ h1, h2, h3, h4, h5, h6 {
       --shadow-md: 0 4px 20px rgba(0,0,0,0.1);
       --shadow-lg: 0 8px 40px rgba(0,0,0,0.12);
       --shadow-glow: 0 0 30px var(--color-accent-glow);
-      --font-display: 'Inter', system-ui, sans-serif;
+      --font-display: 'Space Grotesk', system-ui, sans-serif;
+      --font-body: 'DM Sans', system-ui, sans-serif;
       --section-pad: clamp(64px, 8vw, 120px);
     }
 
