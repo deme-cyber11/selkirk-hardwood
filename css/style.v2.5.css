@@ -1041,8 +1041,9 @@ section { padding: 5rem 0; }
 }
 
 @media (max-width: 480px) {
-  .hero { padding: 110px 1rem 50px; min-height: auto; min-height: unset; }
-  .page-hero { padding: 110px 1rem 40px; }
+  .hero { padding: 90px 1rem 40px; min-height: auto; min-height: unset; }
+  .hero-image { display: none; }
+  .page-hero { padding: 90px 1rem 36px; }
   .hero-buttons { flex-direction: column; align-items: center; }
   .hero-buttons .btn { width: 100%; }
   .hero-trust { flex-direction: column; align-items: center; gap: 12px; }
