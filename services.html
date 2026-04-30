@@ -34,79 +34,168 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
     <link rel="stylesheet" href="css/style.v2.5.css?v=2.5">
 
-    <script type="application/ld+json">
+    <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
     {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-            {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://selkirkhardwood.com/"},
-            {"@type": "ListItem", "position": 2, "name": "Services"}
-        ]
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://selkirkhardwood.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Services"
     }
-    </script>
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Service",
-        "serviceType": "Hardwood Floor Refinishing",
-        "provider": {
-            "@type": "LocalBusiness",
-            "name": "Selkirk Hardwood",
-            "url": "https://selkirkhardwood.com"
-        },
-        "areaServed": {
-            "@type": "City",
-            "name": "Spokane",
-            "addressRegion": "WA"
-        },
-        "hasOfferCatalog": {
-            "@type": "OfferCatalog",
-            "name": "Hardwood Floor Services",
-            "itemListElement": [
-                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Whole-House Sand & Refinish", "description": "Complete sanding to bare wood with professional staining and multi-coat polyurethane finishing."}},
-                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Dustless Floor Sanding", "description": "HEPA-filtered sanding system captures 99% of dust at the source."}},
-                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Custom Stain & Color Change", "description": "Transform your floor with custom stain matching from 40+ colors."}},
-                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Commercial Floor Refinishing", "description": "Gym floors, restaurants, offices refinished on your schedule."}},
-                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Board Replacement & Repair", "description": "Board replacement, water damage restoration, gap filling."}},
-                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "New Hardwood Installation", "description": "Solid and engineered hardwood installation with expert subfloor preparation."}}
-            ]
+  ],
+  "dateModified": "2026-04-25"
+}</script>
+    <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "Hardwood Floor Refinishing",
+  "provider": {
+    "@type": "LocalBusiness",
+    "name": "Selkirk Hardwood",
+    "url": "https://selkirkhardwood.com"
+  },
+  "areaServed": {
+    "@type": "City",
+    "name": "Spokane",
+    "addressRegion": "WA"
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Hardwood Floor Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Whole-House Sand & Refinish",
+          "description": "Complete sanding to bare wood with professional staining and multi-coat polyurethane finishing."
         }
-    }
-    </script>
-    <script type="application/ld+json">
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Dustless Floor Sanding",
+          "description": "HEPA-filtered sanding system captures 99% of dust at the source."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Custom Stain & Color Change",
+          "description": "Transform your floor with custom stain matching from 40+ colors."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Commercial Floor Refinishing",
+          "description": "Gym floors, restaurants, offices refinished on your schedule."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Board Replacement & Repair",
+          "description": "Board replacement, water damage restoration, gap filling."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "New Hardwood Installation",
+          "description": "Solid and engineered hardwood installation with expert subfloor preparation."
+        }
+      }
+    ]
+  },
+  "dateModified": "2026-04-25",
+  "speakable": {
+    "@type": "SpeakableSpecification",
+    "cssSelector": [
+      ".quick-facts",
+      "h1 + p",
+      "main h2 + p"
+    ]
+  }
+}</script>
+    <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "How Hardwood Floor Refinishing Works",
+  "description": "Our 6-step NWFA-certified hardwood floor refinishing process used on every Spokane project.",
+  "totalTime": "P5D",
+  "estimatedCost": {
+    "@type": "MonetaryAmount",
+    "currency": "USD",
+    "value": "3000-8000"
+  },
+  "step": [
     {
-        "@context": "https://schema.org",
-        "@type": "HowTo",
-        "name": "How Hardwood Floor Refinishing Works",
-        "description": "Our 6-step NWFA-certified hardwood floor refinishing process used on every Spokane project.",
-        "totalTime": "P5D",
-        "estimatedCost": {
-            "@type": "MonetaryAmount",
-            "currency": "USD",
-            "value": "3000-8000"
-        },
-        "step": [
-            {"@type": "HowToStep", "position": 1, "name": "Preparation", "text": "Mask all baseboards, vents, and transitions. Remove doors if needed. Set nails below surface."},
-            {"@type": "HowToStep", "position": 2, "name": "Coarse Sanding", "text": "36-grit removes old finish and levels the floor. Decades of wear disappear."},
-            {"@type": "HowToStep", "position": 3, "name": "Medium & Fine Sanding", "text": "Progressive passes with 60-grit and 100-grit create a smooth, uniform surface."},
-            {"@type": "HowToStep", "position": 4, "name": "Staining", "text": "Your chosen color from 40+ options, with test patches applied first."},
-            {"@type": "HowToStep", "position": 5, "name": "Finish Application", "text": "Two to three coats of Bona Mega ONE waterborne polyurethane, with light buffing between coats."},
-            {"@type": "HowToStep", "position": 6, "name": "Final Inspection", "text": "Walk-through with homeowner, written care guide, and 30-day follow-up check."}
-        ]
-    }
-    </script>
-    <script type="application/ld+json">
+      "@type": "HowToStep",
+      "position": 1,
+      "name": "Preparation",
+      "text": "Mask all baseboards, vents, and transitions. Remove doors if needed. Set nails below surface."
+    },
     {
-        "@context": "https://schema.org",
-        "@type": "WebPage",
-        "name": "Hardwood Floor Services Spokane",
-        "speakable": {
-            "@type": "SpeakableSpecification",
-            "cssSelector": [".page-hero", ".content-section .section-label", ".guarantee-section"]
-        },
-        "url": "https://selkirkhardwood.com/services.html"
+      "@type": "HowToStep",
+      "position": 2,
+      "name": "Coarse Sanding",
+      "text": "36-grit removes old finish and levels the floor. Decades of wear disappear."
+    },
+    {
+      "@type": "HowToStep",
+      "position": 3,
+      "name": "Medium & Fine Sanding",
+      "text": "Progressive passes with 60-grit and 100-grit create a smooth, uniform surface."
+    },
+    {
+      "@type": "HowToStep",
+      "position": 4,
+      "name": "Staining",
+      "text": "Your chosen color from 40+ options, with test patches applied first."
+    },
+    {
+      "@type": "HowToStep",
+      "position": 5,
+      "name": "Finish Application",
+      "text": "Two to three coats of Bona Mega ONE waterborne polyurethane, with light buffing between coats."
+    },
+    {
+      "@type": "HowToStep",
+      "position": 6,
+      "name": "Final Inspection",
+      "text": "Walk-through with homeowner, written care guide, and 30-day follow-up check."
     }
-    </script>
+  ],
+  "dateModified": "2026-04-25"
+}</script>
+    <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Hardwood Floor Services Spokane",
+  "speakable": {
+    "@type": "SpeakableSpecification",
+    "cssSelector": [
+      ".page-hero",
+      ".content-section .section-label",
+      ".guarantee-section"
+    ]
+  },
+  "url": "https://selkirkhardwood.com/services.html",
+  "dateModified": "2026-04-25"
+}</script>
   <!-- Microsoft Clarity -->
   <script type="text/javascript">
     (function(c,l,a,r,i,t,y){
@@ -124,7 +213,7 @@
 
     <header class="header" id="header">
         <div class="container">
-            <a href="index.html" class="logo"><span class="logo-icon">SH</span> <span class="logo-brand">Spokane</span> Hardwood</a>
+            <a href="" class="logo"><span class="logo-icon">SH</span> <span class="logo-brand">Spokane</span> Hardwood</a>
             <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span><span></span></button>
             <ul class="nav-links">
                 <li><a href="services.html">Services</a></li>
@@ -144,7 +233,7 @@
 
     <section class="page-hero page-hero-bg" style="background-image: url('images/hero/hero-services.webp')">
         <div class="container">
-            <div class="breadcrumb"><a href="index.html">Home</a> <span>/ Services</span></div>
+            <div class="breadcrumb"><a href="">Home</a> <span>/ Services</span></div>
             <h1>Hardwood Floor Services in Spokane</h1>
             <p>From complete whole-house refinishing to precision board replacement, Selkirk Hardwood delivers NWFA-certified craftsmanship with materials engineered for the Inland Northwest's dry winters and extreme temperature swings.</p>
         </div>
