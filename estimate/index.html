@@ -72,14 +72,11 @@ textarea{resize:vertical;min-height:88px;line-height:1.6}
 .footer{text-align:center;padding:32px 16px;font-size:.8125rem;color:#94a3b8}
 .footer a{color:#e94560;font-weight:500}
 </style>
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HRB1ZYGZYF"></script>
-  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-HRB1ZYGZYF');</script>
 </head>
 <body>
 
 <nav class="nav">
-  <div class="nav__logo"><span>Selkirk</span> Hardwood</div>
+  <div class="nav__logo">Hardwood <span>Pro</span></div>
   <a href="tel:5094619375" class="nav__cta">(509) 461-9375</a>
 </nav>
 
@@ -87,12 +84,12 @@ textarea{resize:vertical;min-height:88px;line-height:1.6}
 
   <div class="page-header">
     <span class="page-header__eyebrow">Free Estimate</span>
-    <h1>Request a Free Estimate from Selkirk Hardwood</h1>
+    <h1>Flooring Project Details</h1>
     <p>Tell us about your flooring project so we can prepare an accurate quote.</p>
   </div>
 
   <form id="form" action="https://lead-manager-api.irontigerdigital.workers.dev/ingest" method="POST">
-    <input type="hidden" name="site_domain" value="selkirkhardwood.com">
+    <input type="hidden" name="site" value="selkirkhardwood.com">
     <input type="hidden" name="_subject" value="New Estimate Request — Hardwood Floor Refinishing Spokane">
     <input type="hidden" name="_redirect" value="https://selkirkhardwood.com/estimate/#success">
     <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
@@ -112,16 +109,30 @@ textarea{resize:vertical;min-height:88px;line-height:1.6}
         </div>
         <div class="field">
           <label for="phone">Phone Number <span class="req">*</span></label>
-          <input type="tel" id="phone" name="phone" required placeholder="(509) 461-9375">
+          <input type="tel" id="phone" name="phone" required placeholder="(555) 000-1234">
         </div>
       </div>
       <div class="field">
         <label for="email">Email Address <span class="req">*</span></label>
         <input type="email" id="email" name="email" required placeholder="you@example.com">
       </div>
+      <div class="field">
+        <label for="address">Street Address <span class="req">*</span></label>
+        <input type="text" id="address" name="address" required placeholder="123 Main St" autocomplete="address-line1">
+      </div>
+      <div class="row">
+        <div class="field">
+          <label for="city">City <span class="req">*</span></label>
+          <input type="text" id="city" name="city" required placeholder="City" autocomplete="address-level2">
+        </div>
+        <div class="field">
+          <label for="state">State <span class="req">*</span></label>
+          <input type="text" id="state" name="state" required placeholder="TX" maxlength="2" autocomplete="address-level1" oninput="this.value=this.value.toUpperCase()">
+        </div>
+      </div>
       <div class="field" style="margin-bottom:0">
-        <label for="address">Property Address <span class="req">*</span></label>
-        <input type="text" id="address" name="address" required placeholder="123 Main St, City, State ZIP">
+        <label for="zip">ZIP Code <span class="req">*</span></label>
+        <input type="text" id="zip" name="zip" required placeholder="00000" pattern="[0-9]{5}(-[0-9]{4})?" inputmode="numeric" autocomplete="postal-code">
       </div>
     </div>
 
@@ -286,8 +297,8 @@ textarea{resize:vertical;min-height:88px;line-height:1.6}
         Additional Details
       </div>
       <div class="field">
-        <label for="notes">Project Description <span class="req">*</span></label>
-        <textarea id="notes" name="notes" rows="4" required placeholder="Describe the project in more detail, any concerns, previous quotes received, access issues, etc."></textarea>
+        <label for="notes">Anything else we should know?</label>
+        <textarea id="notes" name="notes" rows="4" placeholder="Describe the project in more detail, any concerns, previous quotes received, access issues, etc."></textarea>
       </div>
       <div class="field" style="margin-bottom:0">
         <label>Photos <span class="hint">(optional — helps us give a more accurate estimate)</span></label>
@@ -335,7 +346,26 @@ textarea{resize:vertical;min-height:88px;line-height:1.6}
 <script>
 if(window.location.hash==='#success'){document.getElementById('form').style.display='none';document.getElementById('success').style.display='block';}
 document.getElementById('photos').addEventListener('change',function(){document.getElementById('upload-label').textContent=this.files.length?this.files.length+' photo'+(this.files.length>1?'s':'')+' selected':'Tap to upload photos';});
+document.getElementById('form').addEventListener('submit',function(e){
+  var checked=document.querySelectorAll('input[name="services[]"]:checked');
+  if(checked.length===0){
+    e.preventDefault();
+    var grid=document.querySelector('.check-grid');
+    grid.style.outline='2px solid #ef4444';
+    grid.style.borderRadius='10px';
+    grid.style.padding='4px';
+    grid.scrollIntoView({behavior:'smooth',block:'center'});
+    return;
+  }
+  var city=document.getElementById('city').value.trim();
+  var state=document.getElementById('state').value.trim();
+  var zip=document.getElementById('zip').value.trim();
+  var addr=document.getElementById('address');
+  addr.value=addr.value.trim()+', '+city+', '+state+' '+zip;
+});
+document.querySelectorAll('input[name="services[]"]').forEach(function(cb){
+  cb.addEventListener('change',function(){document.querySelector('.check-grid').style.outline='';});
+});
 </script>
 </body>
 </html>
-<h2>Professional Estimate in Spokane, WA</h2><p>Beginning any hardwood floor project in Spokane, WA, whether it's a brand-new installation or the revitalization of existing floors through refinishing, starts with a crucial step: a professional estimate. At Selkirk Hardwood Floors, we understand that Spokane homeowners need clarity and confidence when investing in their homes. Our detailed estimates provide just that, demystifying the process, outlining precise costs, and ensuring every aspect of your project aligns with your vision and budget. This service eliminates unwelcome surprises, allowing you to make informed decisions about material choices, finish types, and the overall scope of work. By meticulously assessing your property and discussing your specific needs upfront, we solve the common problems of cost uncertainty and project scope ambiguity, paving the way for a smooth, stress-free experience that enhances the beauty and value of your Spokane home.</p><h2>What Is Estimate?</h2><p>For Selkirk Hardwood Floors, an "estimate" is a comprehensive, on-site evaluation of your Spokane property conducted by our skilled technicians to determine the exact requirements and costs for your hardwood floor installation or refinishing project. This process goes beyond simple measurements; it involves a thorough assessment of the subfloor condition, existing floor integrity, moisture levels, and the overall environment. We discuss various hardwood species like oak, maple, or hickory, considering their durability and aesthetic appeal. For refinishing, we evaluate the current finish, assess damage, and explore stain and sealant options. Our detailed estimates encompass labor, material costs (including wood, adhesives, finishes), and any necessary prep work, ensuring a transparent and precise financial outline for your custom hardwood solution.</p><h2>Benefits of Professional Estimate</h2><ul><li><strong>Cost Transparency & Budget Planning:</strong> A professional estimate provides an accurate, itemized breakdown of all potential costs associated with your hardwood floor project, from materials and labor to any necessary subfloor repairs. This clarity helps Spokane homeowners avoid unexpected expenses and allows for precise budget planning, ensuring financial peace of mind from the outset.</li><li><strong>Informed Material & Design Choices:</strong> During the estimation process, our experts guide you through the vast array of hardwood species, stain colors, and finish options available. We help you understand the pros and cons of each choice in relation to your lifestyle, home's aesthetics, and Spokane's climate, enabling you to make decisions that perfectly suit your functional and design aspirations.</li><li><strong>Optimized Project Timeline & Efficiency:</strong> A detailed estimate establishes a realistic timeline for your hardwood floor installation or refinishing project, outlining each phase from preparation to completion. This forethought minimizes disruption to your daily life, allows for efficient scheduling, and ensures the project progresses smoothly and on track, leading to a faster, high-quality result.</li><li><strong>Ensured Quality & Durability:</strong> By meticulously assessing your existing conditions and discussing long-term goals, our estimate ensures that the chosen materials and methods are optimal for the Spokane environment and will deliver lasting beauty and durability. This proactive approach by Selkirk Hardwood Floors guarantees that your investment results in a stunning, resilient floor that stands the test of time.</li></ul><h2>Our Estimate Process</h2><p>At Selkirk Hardwood Floors, our estimate process is designed to be thorough, transparent, and completely tailored to your unique Spokane home and vision. We believe that a precise understanding of your needs and property conditions is the cornerstone of a successful hardwood floor project. From your initial inquiry to the final proposal, our team prioritizes clear communication and expert guidance, ensuring you feel confident and informed every step of the way. We meticulously assess all variables, discuss your preferences in detail, and leverage our extensive knowledge to craft a solution that exceeds your expectations, whether for installation or refinishing.</p><ol><li><strong>Initial Consultation & Scheduling:</strong> Contact Selkirk Hardwood Floors to discuss your project needs and schedule a convenient on-site visit to your Spokane home. We'll gather basic information about your vision and current flooring situation.</li><li><strong>On-Site Assessment & Measurement:</strong> Our experienced technician will visit your property to take precise measurements, inspect subfloor conditions, assess existing hardwood (for refinishing), and discuss your specific requirements and aesthetic preferences in detail.</li><li><strong>Material & Finish Selection Guidance:</strong> We'll present various hardwood species, stain colors, and finish options, explaining their characteristics and suitability for your lifestyle. We provide samples and expert recommendations to help you make informed decisions.</li><li><strong>Detailed Proposal Presentation:</strong> You will receive a comprehensive, itemized estimate outlining all costs, materials, labor, and a projected timeline for your project. We'll review the proposal with you, answer any questions, and adjust as needed.</li></ol><h2>Why Spokane, WA Properties Need Estimate</h2><p>Spokane, WA's unique environment makes a professional hardwood floor estimate particularly vital for local properties. Our region experiences significant seasonal temperature and humidity fluctuations, from dry, hot summers to cold, snowy winters. These conditions can cause wood to expand and contract, necessitating careful material selection, proper acclimation, and expert installation techniques to prevent warping or gapping. Moreover, Spokane boasts a diverse housing stock, ranging from historic homes in the South Hill with unique subfloor challenges to modern builds in the Valley with specific aesthetic demands. An estimate from Selkirk Hardwood Floors accounts for these local climatic impacts and architectural nuances, ensuring the chosen hardwood and finishing methods are perfectly suited to endure Spokane's climate and complement your home's distinctive style, guaranteeing lasting beauty and structural integrity for years to come.</p><h2>Common Questions About Estimate</h2><div class="faq-item"><h3>How much does Estimate cost in Spokane, WA?</h3><p>Our initial estimate for hardwood floor installation or refinishing in Spokane, WA, is completely free of charge and comes with no obligation. The actual cost of your project will vary significantly based on factors like the type of wood, square footage, complexity of the job, and chosen finishes. For installation, costs can range from $8 to $20+ per square foot, while refinishing typically falls between $3 and $6 per square foot. We provide transparent, detailed breakdowns so you understand exactly what you're paying for.</p></div><div class="faq-item"><h3>How long does Estimate take?</h3><p>A typical on-site estimate by Selkirk Hardwood Floors in Spokane usually takes about 45 to 90 minutes. This timeframe allows our experts to thoroughly assess your space, discuss your vision, answer all questions, and review material options. Following the assessment, you can generally expect to receive your personalized, detailed project proposal within 24-48 business hours, providing a clear outline for your upcoming hardwood floor project.</p></div><div class="faq-item"><h3>How do I know if I need Estimate?</h3><p>You should consider a professional estimate if you're planning to install new hardwood floors, if your existing floors show significant wear, deep scratches, water damage, or appear dull and lifeless. Even if you're simply exploring renovation possibilities or aiming to boost your home's value and aesthetic appeal, an estimate from Selkirk Hardwood Floors provides clarity on options, timelines, and costs. It's the essential first step to transforming your Spokane home's flooring.</p></div><p class="cta-text">Ready to schedule your hardwood floor estimate in Spokane, WA? Contact Selkirk Hardwood Floors today for a free, no-obligation consultation. We serve the entire Spokane, WA area with fast scheduling, expert advice, and guaranteed results for both installation and refinishing projects.</p>
