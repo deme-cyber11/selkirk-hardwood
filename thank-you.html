@@ -53,12 +53,19 @@ gtag('config', 'G-HRB1ZYGZYF');
 <meta property="og:image:alt" content="Selkirk Hardwood">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://selkirkhardwood.com/images/og-card.jpg">
+<style>/* Round 2 (2026-10-01): phone and tablet only, desktop untouched */
+@media (hover:none) and (pointer:coarse){.header .logo,.header .nav-links a{min-height:44px;min-width:44px;display:inline-flex;align-items:center}}
+@media (max-width:640px){.footer p,.footer-bottom p{font-size:15px!important}}
+/* desktop bug fix: header button text was brown on the orange gradient */
+.header .nav-links .btn{color:#1d140c}
+@media (min-width:769px) and (max-width:1100px){.header .nav-links{display:none;position:absolute;top:100%;left:0;right:0;background:#fff;flex-direction:column;align-items:stretch;padding:1rem 1.5rem 1.5rem;box-shadow:0 12px 30px rgba(0,0,0,.12);gap:0}.header .nav-links.active{display:flex}.header .nav-links li{border-bottom:1px solid #e8e1d8}.header .nav-links li:last-child{border:none;padding-top:.5rem}.header .nav-links li a{display:flex;padding:.875rem 0;min-height:44px}.header .nav-links li a.btn{justify-content:center;padding:12px 18px!important}.header .menu-toggle{display:flex}}
+</style>
 </head>
 <body>
 <header class="header" id="header">
 <div class="container">
 <a class="logo" href="/">
-<span class="logo-icon">SH</span> <span class="logo-brand">Spokane</span> Hardwood
+<span class="logo-icon">SH</span> <span class="logo-brand">Selkirk</span> Hardwood
             </a>
 <button aria-expanded="false" aria-label="Toggle navigation" class="menu-toggle">
 <span></span><span></span><span></span>

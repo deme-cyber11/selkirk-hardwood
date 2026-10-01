@@ -537,3 +537,45 @@ body.dm-home .sticky-cta { display: none; }
   body.dm-home .sticky-cta a:first-child { background: var(--cta); color: var(--cta-ink); }
   body.dm-home .sticky-cta a:last-child { background: var(--navy); color: #fff; }
 }
+
+/* ===== Round 2 (2026-10-01): phone and tablet. Desktop untouched: every rule below sits inside a
+   coarse-pointer or max-width query, so a 1440 mouse viewport renders exactly as before. ===== */
+@media (hover: none) and (pointer: coarse) {
+  body.dm .header .logo, body.dm-home .nav__brand { min-height: 44px; display: inline-flex; align-items: center; }
+  body.dm-home .nav__toggle { min-height: 44px; min-width: 44px; justify-content: center; align-items: center; }
+  body.dm .header .nav-links a { min-height: 44px; display: inline-flex; align-items: center; }
+  body.dm:not(.dm-home) nav a, body.dm .breadcrumb a { min-height: 44px; min-width: 44px; justify-content: center; display: inline-flex; align-items: center; }
+  body.dm .header .nav-links a { min-width: 44px; justify-content: center; }
+  body.dm .dm-wrap li > a[href^="tel:"] { min-height: 44px; display: inline-flex; align-items: center; }
+  body.dm .footer-links a, body.dm-home .footer__links a, body.dm-home .footer__phone,
+  body.dm-home .contact-info-item a, body.dm-home .nav__links a { min-height: 44px; display: inline-flex; align-items: center; }
+  body.dm-home .nav__cta { min-height: 44px; align-items: center; } /* display stays as set per width (hidden at 960 and below) */
+}
+@media (max-width: 1100px) {
+  /* the old sheet makes .trust-bar .container a multi-column grid, which squeezed the 2x2 trust card into one narrow cell */
+  body.dm-home .trust-bar > .container { display: block; }
+}
+@media (min-width: 769px) and (max-width: 1100px) {
+  /* inner pages: 9 header items do not fit between 769 and 1100px (phone number wrapped to 3 lines), so use the menu button there too */
+  body.dm .header .nav-links { display: none; position: absolute; top: 100%; left: 0; right: 0; background: #fff; flex-direction: column; align-items: stretch; padding: 1rem 1.5rem 1.5rem; border-bottom: 1px solid var(--line); box-shadow: var(--shadow-lg); gap: 0; }
+  body.dm .header .nav-links.active { display: flex; }
+  body.dm .header .nav-links li { border-bottom: 1px solid var(--line); }
+  body.dm .header .nav-links li:last-child { border: none; padding-top: .5rem; }
+  body.dm .header .nav-links li a { display: flex; justify-content: flex-start; padding: .875rem 0; min-height: 44px; }
+  body.dm .header .nav-links li a.btn { justify-content: center; padding: 12px 18px !important; }
+  body.dm .header .menu-toggle { display: flex; }
+}
+@media (max-width: 768px) {
+  /* call and quote bar is always on screen on phones (it used to wait for 400px of scroll) */
+  body.dm .floating-cta { transform: none !important; opacity: 1 !important; pointer-events: auto !important; left: 0 !important; right: 0 !important; bottom: 0 !important; flex-direction: row !important; gap: 0 !important; }
+  body.dm .floating-cta a { flex: 1 1 0; width: auto !important; height: 52px !important; border-radius: 0 !important; gap: 8px; box-shadow: none !important; }
+  body.dm .floating-cta a:not(:has(.fcta-mobile-label)) .fcta-label { display: inline !important; position: static; opacity: 1; background: none; padding: 0; box-shadow: none; font-size: 15px; }
+  body.dm .floating-cta .fcta-quote { background: var(--navy) !important; color: #fff !important; }
+  body.dm .floating-cta .fcta-call { background: #15803d !important; color: #fff !important; }
+}
+@media (max-width: 640px) {
+  body.dm :is(.footer, footer) :is(p, li), body.dm .footer-bottom p,
+  body.dm :is(.contact-info-item, .map-placeholder, .response-promise, .value-prop) p,
+  body.dm form p, body.dm-home :is(.area__card, .process__step) p,
+  body.dm-home :is(.footer__legal, .footer__tagline, .form-note) { font-size: 15px !important; }
+}
