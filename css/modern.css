@@ -282,6 +282,16 @@ body.dm .dm-sub h3::before { content: ""; display: block; width: 30px; height: 4
 body.dm .dm-sub p { font-size: .96rem; line-height: 1.7; margin: 0 0 .7rem; }
 body.dm .dm-band--dark .dm-sub { background: rgba(255,255,255,.06) !important; border-color: rgba(255,255,255,.13); }
 @media (max-width: 860px) { body.dm .dm-subgrid, body.dm .dm-subgrid:has(> :nth-child(3):last-child), body.dm .dm-subgrid:has(> :nth-child(5):last-child) { grid-template-columns: 1fr; } }
+body.dm .dm-hero--own, body.dm .dm-hero--own > * { text-align: left !important; }
+body.dm .dm-hero--own :is(.breadcrumb, .breadcrumbs, .breadcrumb-nav) { justify-content: flex-start !important; text-align: left; }
+body.dm > header:not(.header):not(.dm-hero) > nav > a[href^="tel"] { color: var(--cta-ink) !important; }
+body.dm .faq-list { max-width: 900px; margin-left: auto; margin-right: auto; }
+body.dm .areas-we-serve ul { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); }
+body.dm .areas-we-serve a { display: flex; }
+body.dm .dm-wrap .areas-we-serve { padding: 28px; border-radius: 18px; margin: 24px 0 0; border: 1px solid var(--line); }
+@media (max-width: 640px) { body.dm > footer:not(.footer) { padding-top: 28px; } }
+body.dm > header:not(.header):not(.dm-hero) > nav > a { white-space: nowrap; }
+@media (max-width: 640px) { body.dm > header:not(.header):not(.dm-hero) > nav { padding: 10px 16px; } body.dm > header:not(.header):not(.dm-hero) > nav > a[href^="tel"] { padding: 9px 12px; font-size: .9rem; } body.dm > header:not(.header):not(.dm-hero) > nav > a:first-child { font-size: 1rem; } }
 
 /* ===== home page (BEM generator vocabulary that the shared sheets never defined) ===== */
 body.dm-home .container { max-width: 1180px; margin: 0 auto; padding: 0 24px; width: 100%; }
