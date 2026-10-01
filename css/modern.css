@@ -272,6 +272,16 @@ body.dm > nav.breadcrumb + main > .dm-hero:first-child { padding-top: calc(var(-
   body.dm .areas-we-serve ul { display: grid; grid-template-columns: 1fr 1fr; }
 }
 body.dm footer.footer > :is(.footer-bottom, .footer__bottom):first-child { margin-top: 0; border-top: 0; padding-top: 0; }
+body.dm .dm-split > div > p { margin: 0 0 1rem; }
+body.dm .dm-subgrid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; margin: 18px 0 8px; }
+body.dm .dm-subgrid:has(> :nth-child(3):last-child), body.dm .dm-subgrid:has(> :nth-child(5):last-child) { grid-template-columns: repeat(3, 1fr); }
+body.dm .dm-sub { background: #fff; border: 1px solid var(--line); border-radius: 18px; padding: 24px 24px 18px; box-shadow: var(--shadow); }
+body.dm .dm-band:nth-of-type(odd) .dm-sub { background: var(--soft); box-shadow: none; }
+body.dm .dm-sub h3 { margin: 0 0 8px; font-size: 1.12rem; }
+body.dm .dm-sub h3::before { content: ""; display: block; width: 30px; height: 4px; border-radius: 4px; background: var(--cta); margin-bottom: 14px; }
+body.dm .dm-sub p { font-size: .96rem; line-height: 1.7; margin: 0 0 .7rem; }
+body.dm .dm-band--dark .dm-sub { background: rgba(255,255,255,.06) !important; border-color: rgba(255,255,255,.13); }
+@media (max-width: 860px) { body.dm .dm-subgrid, body.dm .dm-subgrid:has(> :nth-child(3):last-child), body.dm .dm-subgrid:has(> :nth-child(5):last-child) { grid-template-columns: 1fr; } }
 
 /* ===== home page (BEM generator vocabulary that the shared sheets never defined) ===== */
 body.dm-home .container { max-width: 1180px; margin: 0 auto; padding: 0 24px; width: 100%; }
