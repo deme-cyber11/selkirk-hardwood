@@ -579,3 +579,40 @@ body.dm-home .sticky-cta { display: none; }
   body.dm form p, body.dm-home :is(.area__card, .process__step) p,
   body.dm-home :is(.footer__legal, .footer__tagline, .form-note) { font-size: 15px !important; }
 }
+
+/* ===== 2026-10-07 design check ===== */
+/* desktop: the quote button of the floating call/quote pair had no background (white icon on a white circle) */
+body.dm .floating-cta .fcta-quote { background: var(--navy); color: #fff; }
+/* a callout label inside a dark band inherited white text on its cream box */
+body.dm .dm-band--dark .highlight-box strong { color: inherit; }
+/* related-reading pill lists showed browser bullets */
+body.dm .dm-wrap ul.dm-links { list-style: none; padding-left: 0; }
+/* desktop trust-bar icons drawn with strokes were filled solid (clock showed as a disc) */
+body.dm-home .trust-bar__icon svg[fill="none"] { fill: none; }
+/* footer legal line was a flex row that spread the copyright year across the width */
+body.dm .footer__legal { display: block; }
+/* light outline button inside the dark call-to-action band was dark on dark */
+body.dm-home .cta-banner .btn--outline { border-color: rgba(255,255,255,.45); color: #fff !important; background: rgba(255,255,255,.08); }
+/* before and after pairs */
+body.dm .ba-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px; margin-top: 34px; }
+body.dm .ba-case h3 { font: 700 1.1rem/1.3 var(--display); margin: 0 0 12px; color: var(--ink); }
+body.dm .ba-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+body.dm .ba-pair figure { position: relative; margin: 0; border-radius: 14px; overflow: hidden; box-shadow: var(--shadow); background: var(--soft); }
+body.dm .ba-pair img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; }
+body.dm .ba-pair figcaption { position: absolute; left: 10px; top: 10px; padding: 4px 10px; border-radius: 999px; background: rgba(0,0,0,.72); color: #fff; font: 700 .78rem/1.4 var(--body, inherit); letter-spacing: .04em; text-transform: uppercase; }
+body.dm .ba-pair figure:last-child figcaption { background: var(--cta); color: var(--cta-ink); }
+body.dm .ba-note { margin: 10px 0 0; font-size: .95rem; color: var(--muted); }
+@media (max-width: 860px) {
+  body.dm .ba-grid { grid-template-columns: 1fr; }
+  body.dm .value-props, body.dm .value-props:has(> :nth-child(4):last-child) { grid-template-columns: 1fr !important; }
+}
+@media (max-width: 640px) {
+  body.dm .dm-wrap ol.dm-olsteps, body.dm .dm-steps { grid-template-columns: 1fr !important; }
+}
+/* home "Why Selkirk" band also carries the .section class, whose white background rule outranked the dark band (white text on white) */
+body.dm-home section.why-dark.section:not(.cta-section) { background: linear-gradient(180deg, var(--navy) 0%, var(--navy-2) 100%) !important; color: #fff; }
+/* home phone menu: the call button sits outside the menu panel and was hidden at phone width, so add it as the last menu item */
+body.dm-home .nav__links .nav__link--call { display: none; }
+@media (max-width: 960px) {
+  body.dm-home .nav__links .nav__link--call { display: flex; justify-content: center; margin-top: 12px; border-bottom: 0; border-radius: 12px; background: var(--cta); color: var(--cta-ink) !important; font-weight: 800; }
+}
