@@ -616,3 +616,6 @@ body.dm-home .nav__links .nav__link--call { display: none; }
 @media (max-width: 960px) {
   body.dm-home .nav__links .nav__link--call { display: flex; justify-content: center; margin-top: 12px; border-bottom: 0; border-radius: 12px; background: var(--cta); color: var(--cta-ink) !important; font-weight: 800; }
 }
+/* the header call button now sits before the menu in the page source (so the menu's call link is the last link); keep its place on screen */
+body.dm-home .nav__inner > .nav__cta { order: 2; }
+body.dm-home .nav__inner > .nav__toggle { order: 3; }
